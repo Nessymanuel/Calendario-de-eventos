@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+  <script>
+    dayjs.extend(window.dayjs_plugin_relativeTime)
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+  <script>
+    dayjs.locale('pt-br')
+  </script>
+
+  <script type="text/javascript" src="./scripts.js" defer=""></script>
+  <title>Agenda de eventos</title>
+  <link rel="shortcut icon" href="imgs/calendar-check-fill.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <img src="imgs/calendar-check.svg" alt="">
+
+      <!-- <button onclick="alternarTema()"> Aterar tema</button> -->
+    </header>
+
+    <form onsubmit="adicionarParticipante(event)">
+      <fieldset>
+        <legend>Inscrição</legend>
+        <div>
+
+          <div class="input-wrapper">
+            <img class="icone" src="imgs/user.svg" alt="">
+
+            <input type="text" placeholder="Nome Completo" name="nome" required>
+          </div>
+
+          <div class="input-wrapper">
+            <img class="icone" src="imgs/at.svg" alt="">
+            <input type="email" placeholder="Email" name="email" required>
+          </div>
+
+          <button>
+            REALIZAR INSCRIÇÃO
+          </button>
+        </div>
+      </fieldset>
+    </form>
+
+    <section class="listaP">
+      <h2>Participantes</h2>
+
+      <div >
+        <table width="100%">
+          <thead style="text-align: left">
+            <tr>
+              <th>Participante</th>
+              <th>Data da inscrição</th>
+              <th>Data do check-in</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="./scripts.js"></script>
+
+  </div>
+  <footer> <p>Desenvolvido com <img src="imgs/heart-fill.svg" > por Gracieth Manuel</p></footer>
+</body>
+
+</html>
