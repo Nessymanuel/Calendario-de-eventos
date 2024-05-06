@@ -157,16 +157,13 @@ footer {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: var(--border);
+  
 }
 
-/*  Darkmode*/
-/* body.darkmode {
-    background-color: #fafafa;
-    color: #27272a;
-  }
-  tbody.darkmode td.darkmode strong.darkmode {
-    color: #09090b;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 600;
-  } */
+#heart{
+  justify-content: center;
+  vertical-align: middle;
+}
+p{
+  font-size: 14px;
+}
